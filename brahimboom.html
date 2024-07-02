@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
         }
+
         .header {
             background-color: #333;
             color: white;
@@ -18,12 +19,38 @@
             text-align: center;
             font-size: 24px;
         }
+
+        .navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: #111;
+        }
+
         .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin: 20px;
         }
+
         .card {
             background-color: #fff;
             border-radius: 8px;
@@ -36,25 +63,30 @@
             align-items: center;
             padding-bottom: 10px;
         }
+
         .card img {
             height: 100px;
             width: auto;
             margin: 20px;
         }
+
         .card-content {
             text-align: center;
             padding: 0 20px;
             flex-grow: 1;
         }
+
         .card-title {
             font-size: 24px;
             margin: 0 0 10px 0;
         }
+
         .card-description {
             font-size: 16px;
             color: #555;
             margin-bottom: 10px;
         }
+
         .join-button {
             display: inline-block;
             padding: 10px 20px;
@@ -68,6 +100,7 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
+
         .join-button:hover {
             background-color: #0056b3;
         }
@@ -77,14 +110,16 @@
     <div class="header">
         L'île BrahimBoom & Ces Spécificités
     </div>
-                <ul class="nav-links">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À Propos</a></li>
-                <li><a href="#ip">IP du Serveur</a></li>
-                <li><a href="#discord">Discord</a></li>
-                <li><a href="#team">Équipe</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="brahimboom.html">Île BrahimBoom</a></li>
+<ul class="navbar">
+  <li><a href="accueil.html">Accueil</a></li>
+  <li><a href="apropos.html">À Propos</a></li>
+  <li><a href="ipserveur.html">IP du Serveur</a></li>
+  <li><a href="discord.html">Discord</a></li>
+  <li><a href="equipe.html">Équipe</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="ilebrahimboom.html">Île BrahimBoom</a></li>
+</ul>
+
     
     <div class="container">
         <div class="card">
