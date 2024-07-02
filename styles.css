@@ -68,9 +68,9 @@ section {
     text-align: center;
 }
 
-.home {
-    background: url('path/to/your/background.jpg') no-repeat center center/cover;
-    background-color: #333; /* Ajouter cette ligne pour une couleur de fond plus foncée */
+/* Home Section with Background Image */
+#home {
+    background: url('/mnt/data/image.png') no-repeat center center/cover;
     color: #fff;
     height: 100vh;
     display: flex;
@@ -80,14 +80,13 @@ section {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-
-.home h2 {
+#home h2 {
     font-size: 48px;
     margin-bottom: 20px;
     animation: fadeInDown 2s ease-in-out;
 }
 
-.home p {
+#home p {
     font-size: 24px;
     animation: fadeInUp 2s ease-in-out;
 }
@@ -134,75 +133,43 @@ section {
     height: 3px;
     background: #4ca1af;
     position: absolute;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -10px;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-strong {
-    color: #4ca1af;
-}
-
-a {
-    color: #4ca1af;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Team Section Styling */
-.team {
-    text-align: left;
 }
 
 .team-members {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 20px;
+    justify-content: center;
 }
 
 .team-member {
-    background: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
     text-align: center;
-    width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    max-width: 200px;
 }
 
 .team-member img {
+    width: 100%;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
+    border: 4px solid #4ca1af;
 }
 
 .team-member h3 {
+    margin-top: 10px;
     font-size: 20px;
-    margin-bottom: 10px;
 }
 
 .team-member p {
+    margin-top: 5px;
     font-size: 16px;
-    color: #777;
 }
 
-/* Contact Form Styling */
+.role-bold {
+    font-weight: bold;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -212,165 +179,111 @@ form {
 .form-group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
+    text-align: left;
 }
 
-.form-group label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-group input, .form-group textarea {
-    width: 100%;
+form input, form textarea {
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
     font-size: 16px;
-}
-
-.form-group textarea {
-    resize: vertical;
-    height: 150px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
 }
 
 form button {
-    padding: 10px 20px;
+    padding: 10px;
+    font-size: 16px;
     background: #4ca1af;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 form button:hover {
-    background: #3b8c9e;
+    background: #2c3e50;
 }
 
-/* Footer Styling */
 footer {
-    background: #333;
+    background: #2c3e50;
     color: #fff;
-    text-align: center;
     padding: 20px 0;
-    margin-top: 40px;
+    text-align: center;
+    position: relative;
 }
 
 footer p {
     margin: 0;
 }
 
-/* Bouton de retour en haut */
-#scrollToTop {
-    display: none;
-    position: fixed;
-    bottom: 20px;
+footer #scrollToTop {
+    position: absolute;
     right: 20px;
+    bottom: 20px;
     padding: 10px;
-    background: #333;
+    background: #4ca1af;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
-#scrollToTop:hover {
-    background: #4ca1af;
+footer #scrollToTop:hover {
+    background: #fff;
+    color: #2c3e50;
 }
 
-/* Mobile Menu Toggle */
 .menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    gap: 5px;
 }
 
 .menu-toggle span {
-    background: #fff;
-    margin: 4px;
     width: 25px;
     height: 3px;
+    background: #fff;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-
     .nav-links {
         display: none;
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        gap: 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
     }
-
-    .nav-links.active {
+    
+    .nav-links a {
+        padding: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .menu-toggle {
         display: flex;
     }
-
-    .team-members {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .home h2 {
-        font-size: 48px;
-        margin-bottom: 20px;
-        color: #000; /* Changer la couleur du texte pour noir */
-        animation: fadeInDown 2s ease-in-out;
-    }
     
-    .home p {
-        font-size: 24px;
-        color: #000; /* Changer la couleur du texte pour noir */
-        animation: fadeInUp 2s ease-in-out;
-    }
-    
-
-    .about, .ip, .discord, .team, .contact {
-        padding: 20px 15px;
+    .menu-toggle.active + .nav-links {
+        display: flex;
     }
 }
 
-.home {
-    position: relative;
-    background: url('path/to/your/background.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+/* Scroll Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.home::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Superposition sombre */
-    z-index: 1;
-}
-
-.home h2, .home p {
-    position: relative;
-    z-index: 2;
-}
-
-/* Add this to your existing CSS file */
-
-.role-bold {
-    font-weight: bold;
-}
-
-/* Add this to your existing CSS file */
-
-.team-member p {
-    font-weight: bold;
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
