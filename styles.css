@@ -1,4 +1,3 @@
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -169,6 +168,11 @@ section {
 
 .role-bold {
     font-weight: bold;
+}
+
+.role-developer {
+    font-weight: bold;
+    color: red;
 }
 
 form {
