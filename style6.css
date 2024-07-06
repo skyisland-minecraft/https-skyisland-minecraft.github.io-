@@ -1,0 +1,17 @@
+
+@keyframes bellshake {
+    0% { transform: rotate(0); }
+    15% { transform: rotate(10deg); }
+    30% { transform: rotate(-10deg); }
+    45% { transform: rotate(9deg); }
+    60% { transform: rotate(-9deg); }
+    75% { transform: rotate(7deg); }
+    85% { transform: rotate(-7deg); }
+    92% { transform: rotate(6deg); }
+    100% { transform: rotate(0); }
+  }
+
+  @-webkit-keyframes rightarrow {
+    0% { -webkit-transform: translateX(0);}
+    100% { -webkit-transform: translateX(-0.4em); }
+  }

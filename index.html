@@ -1,121 +1,278 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyIsland - Serveur Minecraft</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>SkyIsland</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À Propos</a></li>
-                <li><a href="#ip">IP du Serveur</a></li>
-                <li><a href="#discord">Discord</a></li>
-                <li><a href="#team">Équipe</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="brahimboom.html">Île BrahimBoom</a></li>
-                <li><a href="oblist.html">Liste des Îles</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
-    
-    <section id="home" class="home reveal">
-        <div class="container">
-            <h2>Bienvenue sur SkyIsland</h2>
-            <p>Le serveur Minecraft ultime pour une aventure hors du commun!</p>
-        </div>
-    </section>
-    
-    <section id="about" class="about reveal">
-        <div class="container">
-            <h2>À Propos de SkyIsland</h2>
-            <p>SkyIsland est un serveur Minecraft dédié à offrir une expérience unique avec des îles volantes, des quêtes palpitantes, et une communauté accueillante.</p>
-        </div>
-    </section>
-    
-    <section id="ip" class="ip reveal">
-        <div class="container">
-            <h2>IP du Serveur</h2>
-            <p>Rejoignez-nous dès maintenant à l'adresse : <strong>MAINTENANCE</strong></p>
-        </div>
-    </section>
-    
-    <section id="discord" class="discord reveal">
-        <div class="container">
-            <h2>Discord</h2>
-            <p>Rejoignez notre communauté sur Discord pour des mises à jour, des discussions et du support : <a href="https://discord.gg/Hh7DhrkuwN">https://discord.gg/Hh7DhrkuwN</a></p>
-            <p2>Rejoingez le studio de SkyIsland "SkyStudio" : <a href="https://discord.gg/mbKscrUXUd">https://discord.gg/mbKscrUXUd</a></p2>
-        </div>
-    </section>
-    
-    <section id="team" class="team reveal">
-        <div class="container">
-            <h2>Équipe</h2>
-            <div class="team-members">
-                <div class="team-member">
-                    <img src="kelia.png" alt="Avatar du Membre">
-                    <h3>Kelia</h3>
-                    <p class="role-bold">Rôle: Fondateurs</p>
-                </div>
-                <div class="team-member">
-                    <img src="gove.png" alt="Avatar du Membre">
-                    <h3>Gove</h3>
-                    <p class="role-bold">Rôle: Fondateur</p>
-                </div>
-                <div class="team-member">
-                    <img src="mrwells.png" alt="Avatar du Membre">
-                    <h3>MrWellsDev</h3>
-                    <p class="role-developer">Rôle: Développeur</p>
-                </div>
-                <div class="team-member">
-                    <img src="nit.png" alt="Avatar du Membre">
-                    <h3>nitneuq04</h3>
-                    <p class="role-bold">Rôle: Helpeur</p>
-                </div>
-                <!-- Ajouter plus de membres de l'équipe si nécessaire -->
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact" class="contact reveal">
-        <div class="container">
-            <h2>Contact</h2>
-            <form id="contact-form" action="submit_form.php" method="post">
-                <div class="form-group">
-                    <label for="name">Nom</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 SkyIsland & MrWellsDev. Tous droits réservés.</p>
-            <button id="scrollToTop">Retour en haut</button>
-        </div>
-    </footer>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Site web de la communauté Garry&#039;s Mod SkyStudio, proposant une expérience de jeu immersive et réaliste">
+    <meta name="theme-color" content="#3490DC">
+    <meta name="author" content=" Azuriom, Sloyni">
 
-    <script src="scripts.js"></script>
-</body>
+    <meta property="og:title" content="Maintenance • SkyStudio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://skyisland-minecraft.github.io">
+    <meta property="og:image" content="7e209a8676170413e19d46c7cedcf4ee">
+    <meta property="og:description" content="Site web de la communauté Garry&#039;s Mod SkyStudio, proposant une expérience de jeu immersive et réaliste">
+    <meta property="og:site_name" content="SkyStudio">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Maintenance • SkyStudio">
+    <meta property="twitter:url" content="https://skyisland-minecraft.github.io">
+    <meta property="twitter:description" content="Site web de la communauté Garry&#039;s Mod SkyStudio, proposant une expérience de jeu immersive et réaliste">
+    <meta property="twitter:image" content="7e209a8676170413e19d46c7cedcf4ee">
+        <meta name="keywords" content="SkyStudio, Larmes d&#039;Ivoire,  Serious, MilitaryRP, RP, SCP, Roleplay, GTACITYRP, BL, France , Guerre,  FPS, Garry&#039;s Mod, Gmod, Garry&#039;s School">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="BuRDDpywMaHDqC2aUDbCYWUy6HXtsGUdX9EpYMUk">
+
+    <title>Maintenance • SkyStudio</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="7e209a8676170413e19d46c7cedcf4ee.png">
+
+
+    <!-- Fonts -->
+    <link href="style1.css" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
+    <link href="boostrap.css" rel="stylesheet">
+
+
+    <!-- Styles -->
+    
+    <style>
+        :root {
+            --settings-background: url("7e209a8676170413e19d46c7cedcf4ee.png");
+
+            --color-1:#162c21;
+            --color-2:#00b336;
+            --color-3:#05050e;
+            --color-4:#415843;
+
+            --color-5:rgba(65,88,67, 0.85);
+
+
+            --text-color-1: #ffffff;
+            --text-color-2:  #ABDEB9;
+            --text-color-3:  #D4E3DA;
+
+
+            --text-color-4:  #ffffff;
+            --text-color-5:  #C6DCCF;
+            --text-color-6:  #8EB186;
+        }
+
+        .hide_noanim {
+            visibility: hidden;
+            opacity:0;
+        }
+        a[href]:not(.btn) {
+            text-decoration: none;
+            color:var(--text-color-2);
+        }
+        a[href]:not(.btn):hover {
+            text-decoration: underline;
+        }
+    </style>
+        <link href="style3.css" rel="stylesheet">
+    <link href="style4.css"  rel="stylesheet">
+    
+    <link rel="stylesheet" href="style5.css">
+    <link href="style6.css" rel="stylesheet">
+    <link href="core.css" rel="stylesheet">
+    <link href="style7.css" rel="stylesheet">
+    <link href="style8.css" rel="stylesheet">
+    
+        <!-- Page level styles -->
+
+
+</head>
+<body data-bs-theme="dark">
+
+    <div id="app" class="home">
+        <nav id="sidebar">
+    <div class="sidebar-start">
+        <a class="sidebar-image sidebar-link" href="https://skyisland-minecraft.github.io/index.html">
+            <span class="icon">
+                <img src="7e209a8676170413e19d46c7cedcf4ee.png" alt="">
+            </span>
+            <span class="text">SkyStudio</span>
+        </a>
+    </div>
+    <div class="sidebar-middle">
+
+                                <a href="https://skyisland-minecraft.github.io/index.html" class="sidebar-link opacity-0  active " >
+
+                                <i class="icon bi bi-house-door-fill"></i>
+                                <span class="text"> Accueil</span>
+            </a>
+                                            <a href="https://skyisland-minecraft.github.io/forum" class="sidebar-link opacity-0 " >
+
+                                <i class="icon bi bi-layout-text-window-reverse"></i>
+                                <span class="text"> Forum</span>
+            </a>
+                                            <a href="https://skyisland-minecraft.github.io/shop" class="sidebar-link opacity-0 " >
+
+                                <i class="icon bi bi-cart-plus"></i>
+                                <span class="text"> Boutique</span>
+            </a>
+                                            <a href="https://skyisland-minecraft.github.io/wiki" class="sidebar-link opacity-0 " >
+
+                                <i class="icon bi bi-filter-circle"></i>
+                                <span class="text"> WIKI</span>
+            </a>
+                            <button data-toggle="sidebar-dropdown" data-dropdown-target="more" class="sidebar-link opacity-0">
+            <i class="icon bi bi-three-dots"></i>
+            <span class="text">
+                Autres                <i class="bi bi-chevron-right me-4"></i>
+            </span>
+        </button>
+    </div>
+    <div class="sidebar-end">
+                <a href="https://skyisland-minecraft.github.io/user/login" class="sidebar-btn sidebar-link">
+            <i class="icon bi bi-person-fill"></i>
+            <span class="text">Connexion</span>
+        </a>
+
+                    </div>
+    <div class="sidebar-dropdown-body hide_noanim" data-dropdown-state="no" data-dropdown-id="more">
+    </div>
+                                                        </nav>
+<nav id="sidebar-mobile" class="pb-4">
+        <a class="sidebar-image sidebar-link" href="https://skyisland-minecraft.github.io">
+            <span class="icon py-4">
+                <img src="7e209a8676170413e19d46c7cedcf4ee.png" alt="">
+            </span>
+            <span class="text">SkyStudio</span>
+        </a>
+                                <a href="https://skyisland-minecraft.github.io" class="sidebar-link  active " >
+                                <i class="icon bi bi-house-door-fill"></i>
+                
+                <span class="text">
+                     Accueil
+                </span>
+            </a>
+                                            <a href="https://skyisland-minecraft.github.io/forum" class="sidebar-link " >
+                                <i class="icon bi bi-layout-text-window-reverse"></i>
+                
+                <span class="text">
+                     Forum
+                </span>
+            </a>
+                                            <a href="https://skyisland-minecraft.github.io/shop" class="sidebar-link " >
+                                <i class="icon bi bi-cart-plus"></i>
+                
+                <span class="text">
+                     Boutique
+                </span>
+            </a>
+                                            <a href="https://skyisland-minecraft.github.io/wiki" class="sidebar-link " >
+                                <i class="icon bi bi-filter-circle"></i>
+                
+                <span class="text">
+                     WIKI
+                </span>
+            </a>
+                                        <a href="https://skyisland-minecraft.github.io/user/login" class="sidebar-btn mt-3 sidebar-link">
+                <i class="icon bi bi-person-fill"></i>
+                <span class="text">Connexion</span>
+            </a>
+
+                            <div data-toggle="close-sidebar" class="sidebar-close">
+            <i class="bi bi-x-lg"></i>
+        </div>
+</nav>
+        <main id="content">
+            <div class="content-wrapper">
+                <div style="padding-bottom:70px;">
+
+                    <div id="topbar-mobile">
+    <div class="d-flex align-items-center">
+        <button data-toggle="open-sidebar" class="btn" type="button">
+            <i class="bi bi-list"></i>
+        </button>
+        <img src="7e209a8676170413e19d46c7cedcf4ee.png" width="50" alt="">
+        <h6 class="fw-bold mb-0 ms-3">
+            SkyStudio
+        </h6>
+    </div>
+    <div class="d-flex align-items-center pe-3">
+                <a href="https://skyisland-minecraft.github.io/user/login" class="btn btn-sm btn-gradient-2">
+            <i class="icon bi bi-person-fill"></i>
+            <span class="text">Connexion</span>
+        </a>
+            </div>
+</div>
+
+                        <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-body">
+                    <p><strong>Chers joueurs,<br><br></strong></p>
+<p><em>Nous sommes actuellement en train de réaliser une maintenance de notre site pour vous permettre de bénéficier d'une expérience toujours plus riche... De ce fait, il vous sera impossible d'accéder au site internet ainsi qu'à ses services sur tout le temps de la maintenance.<br><br></em>Pour toute <span style="color: #e03e2d;"><span style="color: #fa1900;"><strong>question ou problème</strong></span><span style="color: #ffffff;">,</span></span> veuillez vous rendre directement sur <span style="color: #fa1900;"><strong>discord en ouvrant un ticket</strong></span>, un membre de l'équipe vous répondra au plus vite ! <br><br><em>En vous remerciant pour tout l'intérêt que vous accordez à nos plateformes, et en espérant vous revoir très bientôt ! </em><br><em><br></em><em>Cordialement, l'Equipe SkyStudio</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                </div>
+            </div>
+            <footer id="bigfooter" class="card justify-content-center">
+    <div id="socialLinks">
+                        <a class="social-item" title="Discord" data-bs-toggle="tooltip" target="_blank" href="">
+                    <i class="bi bi-bi bi-discord"></i>
+                </a>
+            </div>
+    <div class="row">
+        <div class="col-md-5 d-md-flex align-items-center px-5">
+            <div class="py-4">
+                <h6 class="fw-bold h3 pt-3 pt-md-0">SkyStudio</h6>
+                <p class="text-muted"></p>
+            </div>
+        </div>
+        <div class="col-md-2 d-md-flex d-none justify-content-center">
+            <img src="7e209a8676170413e19d46c7cedcf4ee.png" class="bigfooter-image" alt="">
+        </div>
+        <div class="col-md-5 d-md-flex align-items-center justify-content-center px-5 px-md-0">
+            <div>
+                <h6 class="fw-bold h3">Liens utiles</h6>
+                <div class="mb-3 mb-sm-0">
+                                                            <a href="/support/tickets" class="bigfooter-link d-block">
+                        <i class="bi bi-link-45deg me-1"></i>
+                        Support
+                    </a>
+                                                                                <a href="/cgu" class="bigfooter-link d-block">
+                        <i class="bi bi-link-45deg me-1"></i>
+                        CGU/CFV
+                    </a>
+                                                                                <a href="/support/tickets" class="bigfooter-link d-block">
+                        <i class="bi bi-link-45deg me-1"></i>
+                        Règlement
+                    </a>
+                                                                                                                                        </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer id="footer" class="card">
+        <div class="card-body d-md-flex justify-content-between px-5" style="border-radius: 0 !important;">
+        <div>
+            Copyright © 2024 SkyStudio - Tous droits réservés.
+        </div>
+        <div>
+            Propulsé par <a href="https://azuriom.com" target="_blank" rel="noopener noreferrer">Azuriom</a>.                        <a href="https://market.azuriom.com/resources/89" data-sloyni-copyright class="sloyni-copyright"  target="_blank">Thème réalisé par Sloyni.</a>
+                    </div>
+    </div>
+</footer>
+        </main>
+            </div>
+    
+
+    <!-- Scripts -->
+    <script src="index1.js" ></script>
+        <script src="boostrap.js" ></script>
+    <script src="index2.js" ></script>
+
+
+    <script src="index3.js" ></script>
+        <!-- Page level scripts -->
+        </body>
 </html>
